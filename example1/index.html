@@ -1,22 +1,157 @@
+<!--this is for html notes-->
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Page Tile</title>
+        <title>Example 1</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class= "container">
             <div class="top-wrapper">
-                <div class="top-center">
-                <a href="https://www.google.com/">Is this Architecture?</a>
-            </div> 
+                <div class="top-link-wrapper">
+                    <a href="https://www.google.com/">Is this Architecture?</a> 
+                </div>
 
-            <div class="top-right">
+            <div class="top-me">
                 <div class="me">
-                    <div>marissa ridzuan</div>
+                    <div>Ask google because i dont know</div>
                 </div>  
             </div>
         </div>
 
+            <div class="content-wrapper">
+                <div class="grid-items-wrapper">
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo1.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo2.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo3.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo4.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo5.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo6.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo7.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo8.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-wrapper">
+                        <div class="grid-image-background" style= "background-image: url(imgs/architecture-photo9.jpg);" >
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src= "imgs/idk.png">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
     </body>
+    <script>
+        const gridItems = document.querySelectorAll( '.grid-item-wrapper' )
+
+        gridItems.forEach(gridItem => {
+            gridItem.addEventListener('mouseover',() => {
+                console.log(gridItem.childNodes[1].classList);
+                gridItem.childNodes[1].classList.add('img-darken');
+            })
+
+            gridItem.addEventListener('mouseout',() => {
+                console.log(gridItem.childNodes[1].classList);
+                gridItem.childNodes[1].classList.remove('img-darken');
+            })
+
+            gridItem.addEventListener('mouseover',() => {
+                console.log(gridItem.childNodes[3].classList);
+                gridItem.childNodes[3].classList.remove('img-darken');
+            })
+
+            gridItem.addEventListener('mouseout',() => {
+                console.log(gridItem.childNodes[3].classList);
+                gridItem.childNodes[3].classList.add('img-darken');
+            })
+
+        
+        })
+    </script>
 </html>
