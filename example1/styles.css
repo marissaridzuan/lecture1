@@ -20,6 +20,7 @@ body{
     justify-content: space-evenly;
     padding: 30px;
     background-color: rgb(46, 43, 43);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .top-wrapper > div {
@@ -33,7 +34,7 @@ body{
     color: rgb(46, 43, 43);
     font-size: 4em;
     background-color: rgb(46, 43, 43);
-    transition: color 0.2s;
+    transition: color 0.8s;
 }
 
 .top-link-wrapper a:hover {
@@ -45,6 +46,8 @@ body{
     justify-content: center;
     color:  rgb(46, 43, 43);
     padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 /*Grid Styles*/
@@ -80,18 +83,8 @@ body{
     height: 100%;
     padding-left: 50px;
     padding-right: 50px;
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     transition: 1s;
 }
-
-.img-text-wrapper:hover {
-    background-image: transparent;
-}
-
-
 
 
 .img-darken{
