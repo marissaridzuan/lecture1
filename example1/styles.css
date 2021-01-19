@@ -31,7 +31,7 @@ body{
 .top-link-wrapper a {
     padding-bottom: 30px;
     height: 40px;
-    color: rgb(46, 43, 43);
+    color: rgb(88, 86, 86);
     font-size: 4em;
     background-color: rgb(46, 43, 43);
     transition: color 0.8s;
@@ -67,13 +67,43 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
-.logo-wrapper img  :hover{
-    margin-right: 0px;
+.subtitle {
+    background-color: tomato;
+    color: tomato;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40pt;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    padding-left: 50px;
+    padding-right: 50px;
+    align-content: center;
 }
 
-.img-text-wrapper {
+
+.subtitle:hover {
+    background-color: transparent;
+    color: tomato;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40pt;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;   
+    padding-left: 50px;
+    padding-right: 50px;
+    align-content: center;
+}
+
+
+
+/*.img-text-wrapper {
     position: absolute;
     top: 0;
     display: flex;
@@ -83,8 +113,7 @@ body{
     height: 100%;
     padding-left: 50px;
     padding-right: 50px;
-    transition: 1s;
-}
+}*/
 
 
 .img-darken{
