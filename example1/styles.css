@@ -101,21 +101,6 @@ body{
     align-content: center;
 }
 
-
-
-/*.img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-}*/
-
-
 .img-darken{
     transition: 1s;
     filter: brightness(10%);
